@@ -1,101 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-        <meta charset="UTF-8">
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Descrição da página que estamos criando em aula">
-        <meta name="keywords" content="mago, site do mago, unintese, escola de programadores, programador, html, javascript, css, PROGRAMADOR">
+        <meta name="keywords" content="mago, site do mago, unintese, escola de programadores, programador, html, css, javascript, Programador, PROGRAMADOR">
         <meta name="author" content="Mago">
 
         <title>Site do Mago</title>
 
-        <link rel="icon" href="img/favicon.ico" type="img/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-
         <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    </head>
+    <body>
         <header>
             <div class="backgroundHeaderColor">
                 <div class="containerHeader">
-                    <img  class="logoSite" src="img/escola-de-programadores.png">
-                    <nav class="containerButonns">
-                    <a class="buttonHeader" href="#apresentacao">Apresentação</a>
-                    <a class="buttonHeader" href="#skills">Skills</a>
-                    <a class="buttonHeader" href="#contato">Contato</a>
-                </nav>
-          </div>
-        </div>
+                    <img class="logoSite" src="img/escola-de-programadores.png">
+                    <nav class="containerButtons">
+                        <a class="button" href="#apresentacao">Apresentação</a>
+                        <a class="button" href="#skills">Skills</a>
+                        <a class="button" href="#contato">Contato</a>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <main>
             <section title="Apresentação">
-                <div>
-                    <div id="apresentacao">
-                        <div>
-                        <h1>Mago</h1>
-                        <p>Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
+                <div id="apresentacao" class="marginContainer">
+                    <div>
+                        <h1 class="tituloBloco">Mago</h1>
+                        <p class="paragrafo">Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
                     </div>
                     <img width="500px" src="img/personagens_gestao.webp">
                 </div>
-            </div>
             </section>
 
-            <section title="Skills">
-                <div id="skills">
-                    <h2>Skills</h2>
-                    <div>
-                        <img src="img/html logo.png">
-                        <h2>HTML</h2>
-                    </div>
+            <section title="skills">
+                <div id="skills" class="marginContainer">
+                    <h2 class="tituloBloco">Skills</h2>
 
-                    <div>
-                        <img src="img/html logo.png">
-                        <h3>CSS</h3>
-                    </div>
+                    <div class="skillContainer">
+                        <div class="skill htmlColorBorder">
+                            <img src="img/html logos.png">
+                            <h3>HTML</h3>
+                        </div>
 
-                    <div>
-                        <img src="img/html logo.png">
-                        <h3>JavaScript</h3>
-                    </div>
+                        <div class="skill cssColorBorder">
+                            <img src="img/html logos.png">
+                            <h3>CSS</h3>
+                        </div>
 
-                    <div>
-                        <img src="img/html logo.png">
-                        <h3>Wordpress</h3>
+                        <div class="skill jsColorBorder"> 
+                            <img src="img/html logos.png">
+                            <h3>JavaScript</h3>
+                        </div>
+
+                        <div class="skill wpColorBorder">
+                            <img src="img/html logos.png">
+                            <h3>Wordpress</h3>
+                        </div>
                     </div>
                 </div>
-            </section> 
+            </section>
 
             <section title="Contato">
-                <div id="contato">
-                    <p>Preencha o formulário e entrarei em contato</p>
-                    <div>
-                        <form>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome"/>
+                <div id="contato" class="marginContainer">
+                    <h2 class="tituloBloco">Contato</h2>
+                    <p class="paragrafo">Preencha o formulário e entrarei em contato</p>
 
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email"/>
+                        <form class="formularioContato">
+                            <input type="text" name="nome" placeholder="Digite seu nome."/>
 
-                        <label for="numero">Telefone:</label>
-                        <input type="phone" name="numero"/>
+                            <input type="email" name="email" placeholder="Email."/>
 
-                        <button type="submit">Enviar</button>
+                            <input type="phone" name="numero" placeholder="Telefone com DDD."/>
+
+                            <textarea placeholder="Escreva seu assunto."></textarea>
+
+                            <button class="button" type="submit">Enviar</button>
                         </form>
 
                     </div>
-                </div>
             </section>
         </main>
 
         <footer>
             <div>
-                <a href="https://github.com/MagoUnintese" target="_blank"> <img src="img/logo.github.png">
-                <a href="mailto:mago.unintese@gmail.com"> mago.unitese@gmail.com</a>
+                <a href="https://github.com/MagoUnintese" target="_blank"><img src="img/logo.github.png"></a>
+                <a href="mailto:mago.unintese@gmail.com">mago.unintese@gmail.com</a>
             </div>
         </footer>
     </body>
